@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GTM Test</title>
+    <script defer src="gtm-test.js"></script>
+    <style>
+      .buttons {
+        max-width: 800px;
+        padding: 20px;
+        margin: auto;
+        display: flex;
+        gap: 10px;
+      }
+
+      .buttons button {
+        flex-grow: 1;
+        flex-basis: 0;
+      }
+
+      .current {
+        text-align: center;
+      }
+
+      .current span {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="current">Current Selection: <span>None</span></div>
+    <div class="buttons">
+      <button data-keyword="abcde">abcde</button>
+      <button data-keyword="fghij">fghij</button>
+      <button data-keyword="klmno">klmno</button>
+      <button data-keyword="pqrst">pqrst</button>
+      <button data-keyword="uvwxyz">uvwxyz</button>
+    </div>
+  </body>
+</html>
